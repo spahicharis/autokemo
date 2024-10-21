@@ -1,2 +1,0 @@
-# autokemo
-Auto Kemo Doo
