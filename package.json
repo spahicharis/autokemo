@@ -4,10 +4,10 @@
   "license": "MIT",
   "scripts": {
     "nx": "nx",
-    "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test",
-    "lint": "nx lint"
+    "start": "nx serve autokemo-public",
+    "build": "nx build  autokemo-public",
+    "test": "nx test  autokemo-public",
+    "lint": "nx lint  autokemo-public"
   },
   "private": true,
   "dependencies": {
