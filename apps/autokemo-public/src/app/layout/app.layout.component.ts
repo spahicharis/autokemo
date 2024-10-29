@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { AppFooterComponent } from './app.footer.component';
+import { AppTopBarComponent } from './app.top-bar.component';
+import { AppNavbarComponent } from './app.navbar.component';
 
 @Component({
   standalone: true,
@@ -9,7 +11,9 @@ import { AppFooterComponent } from './app.footer.component';
     RouterOutlet,
     RouterLink,
     RouterLinkActive,
-    AppFooterComponent
+    AppFooterComponent,
+    AppTopBarComponent,
+    AppNavbarComponent
   ],
   templateUrl: './app.layout.component.html'
 })
