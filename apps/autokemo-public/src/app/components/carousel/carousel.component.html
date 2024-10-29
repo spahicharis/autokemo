@@ -1,18 +1,49 @@
-<section class="py-5 d-flex align-items-center min-vh-100 position-relative">
-  <div class="container">
-    <div class="col-md-4 d-none d-md-block h-100 position-absolute top-0 start-0 bg-primary" style="z-index:-2;">
-    </div>
-    <div class="col-md-8 h-100 position-absolute top-0 end-0 bg-light" style="z-index:-2;">
-      <div class="img-fluid h-full w-full" style="background-image: url(carousel-bg-2.jpg)"></div>
-    </div>
-    <div class="row">
-      <div class="col-xl-5 col-lg-6">
-        <div class="bg-white p-5 shadow">
-          <h1 class="display-3 fw-bold">Experience the power of <span class="text-primary">Bootstrap</span></h1>
-          <p class="lead my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat erat quis pulvinar semper.</p>
-          <a class="btn btn-lg btn-primary" href="">Get Started</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<p-carousel
+  [value]="products"
+  [numVisible]="1"
+  [numScroll]="1"
+  [circular]="true"
+  [responsiveOptions]="responsiveOptions">
+  <ng-template let-product pTemplate="item">
+    @switch (product.style) {
+      @case (2) {
+        <section class="py-5 d-flex align-items-center min-vh-100 position-relative">
+          <div class="container">
+            <div class="col-md-4 d-none d-md-block h-100 position-absolute top-0 end-0 bg-primary" style="z-index:-2;">
+            </div>
+            <div class="col-md-8 h-100 position-absolute top-0  start-0 bg-light" style="z-index:-2;">
+              <div class="img-fluid h-full w-full animate__animated animate__bounce" style="background-image: url({{product.image}})"></div>
+            </div>
+            <div class="row flex-row-reverse text-end" >
+              <div class="col-xl-5 col-lg-6">
+                <div class="bg-white p-5 shadow">
+                  <h1 class="display-3 text-primary fw-bold" [innerHTML]="product.title"></h1>
+                  <p class="lead my-4" [innerHTML]="product.subtitle"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      }
+      @default {
+        <section class="py-5 d-flex align-items-center min-vh-100 position-relative">
+          <div class="container">
+            <div class="col-md-4 d-none d-md-block h-100 position-absolute top-0 start-0 bg-primary" style="z-index:-2;">
+            </div>
+            <div class="col-md-8 h-100 position-absolute top-0 end-0 bg-light" style="z-index:-2;">
+              <div class="img-fluid h-full w-full" style="background-image: url({{product.image}})"></div>
+            </div>
+            <div class="row">
+              <div class="col-xl-5 col-lg-6">
+                <div class="bg-white p-5 shadow">
+                  <h1 class="display-3 fw-bold"><span [innerHTML]="product.title"></span></h1>
+                  <p class="lead my-4">{{product.subtitle}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      }
+    }
+  </ng-template>
+</p-carousel>

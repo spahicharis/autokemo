@@ -12,7 +12,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
         <a routerLink="/" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
           <h2 class="m-0 text-light"><i class="fa fa-car me-3"></i><img src="autokemo-white-yellow-2.png" alt=""></h2>
         </a>
-        <span class="px-4 px-lg-5 text-xs sm:text-sm text-gray-400">Uvoz i prodaja | Otpad | Servis | Autolakirer | Auto stakla</span>
+        <span class="px-4 px-lg-5 text-xs sm:text-sm text-gray-400">Uvoz i prodaja | Otpad | Servis | Auto stakla</span>
       </div>
 
       <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -44,3 +44,4 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styles: ``,
 })
 export class AppNavbarComponent {}
+
