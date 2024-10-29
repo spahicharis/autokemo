@@ -1,36 +1,45 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   template: `
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5  animate__animated animate__fadeIn" data-wow-delay="0.1s">
       <div class="container py-5">
         <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Address</h4>
-            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-            <p class="mb-2"><i class="fa fa-envelope me-3"></i>info&#64;example.com</p>
+          <div class="col-12 col-lg-3 col-md-6">
+            <a routerLink="/" class="navbar-brand d-flex align-items-center ">
+              <h2 class="m-0 text-light"><i class="fa fa-car me-3"></i><img src="autokemo-white-yellow-2.png" alt=""></h2>
+            </a>
+            <p>
+              U našoj ponudi pronaći ćete širok asortiman proizvoda i usluga za vaše vozilo. <br>
+              Auto servis, auto otpad, rezervne dijelove, auto limarija, auto lakiranje, auto poliranje!
+            </p>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6">
+            <h4 class="text-light mb-4">Adresa</h4>
+            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i><a class="text-light">Turbe - Travnik, BiH</a></p>
+            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a class="text-light" href="tel:+387 60 31 13 409">+387 60 31 13 409</a></p>
+            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a class="text-light" href="tel:+387 61 696 811">+387 61 696 811</a></p>
+            <p class="text-light mb-2"><i class="fa fa-envelope me-3"></i><a class="text-light" href="mailto:autoserviskemo@gmail.com">autoserviskemo&#64;gmail.com</a></p>
             <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
               <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Opening Hours</h4>
-            <h6 class="text-light">Monday - Friday:</h6>
-            <p class="mb-4">09.00 AM - 09.00 PM</p>
-            <h6 class="text-light">Saturday - Sunday:</h6>
-            <p class="mb-0">09.00 AM - 12.00 PM</p>
+          <div class="col-12 col-lg-3 col-md-6">
+            <h4 class="text-light mb-4">Radno vrijeme</h4>
+            <h6 class="text-light">Ponedjeljak - Subota</h6>
+            <p class="mb-4">08.00 - 17:00</p>
+            <h6 class="text-light">Nedjelja i praznici</h6>
+            <p class="mb-0">Ne radimo</p>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-12 col-lg-3 col-md-6">
             <h4 class="text-light mb-4">Services</h4>
             <a class="btn btn-link" href="">Diagnostic Test</a>
             <a class="btn btn-link" href="">Engine Servicing</a>
@@ -38,25 +47,17 @@ import { CommonModule } from '@angular/common';
             <a class="btn btn-link" href="">Oil Changing</a>
             <a class="btn btn-link" href="">Vacuam Cleaning</a>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Newsletter</h4>
-            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-            <div class="position-relative mx-auto" style="max-width: 400px;">
-              <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-              <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-            </div>
-          </div>
         </div>
       </div>
       <div class="container">
         <div class="copyright">
           <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+              &copy; <a class="border-bottom" routerLink="/">autokemo.ba</a> - sva prava zadržana.
 
+              <br>
               <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-              Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-              <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+              Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>. Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon.</a> Modified by Haris.
             </div>
             <div class="col-md-6 text-center text-md-end">
               <div class="footer-menu">

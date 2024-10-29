@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
         <div class="col-lg-7 px-5 text-start">
           <div class="h-100 d-inline-flex align-items-center py-3 me-4">
             <small class="fa fa-map-marker-alt text-primary me-2"></small>
-            <small>Turbe, BiH</small>
+            <small>Turbe - Travnik, BiH</small>
           </div>
           <div class="h-100 d-inline-flex align-items-center py-3">
             <small class="far fa-clock text-primary me-2"></small>
@@ -19,9 +19,14 @@ import { CommonModule } from '@angular/common';
           </div>
         </div>
         <div class="col-lg-5 px-5 text-end">
-          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+          <div class="h-100 d-inline-flex  align-items-center py-3 me-4">
             <small class="fa fa-phone-alt text-primary me-2"></small>
-            <small><a href="tel:+387 60 31 13 409">+387 60 31 13 409</a></small>
+            <small>
+              <a href="tel:+387 60 31 13 409">+387 60 31 13 409</a>
+            </small>
+            <div class="me-4"></div>
+            <small class="fa fa-phone-alt text-primary me-2"></small>
+            <a href="tel:+387 61 696 811">+387 61 696 811</a>
           </div>
           <div class="h-100 d-inline-flex align-items-center">
             <a class="btn   text-primary me-1" href="https://www.facebook.com/autoserviskemo/"><i class="fab fa-facebook-f"></i></a>
