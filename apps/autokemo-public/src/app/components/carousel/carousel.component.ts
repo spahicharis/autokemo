@@ -21,7 +21,7 @@ export class CarouselComponent implements OnInit {
 
   products = [
     {
-      title: 'Prodaja <span class="text-primary">novih i polovnih</span> dijelova',
+      title: 'Prodaja novih i polovnih dijelova',
       subtitle: 'Kvalitetni polovni dijelovi za sve marke vozila. Brzo i pouzdano rješenje za vaš automobil.',
       image: 'carousel-bg-1.jpg',
       style: 1
