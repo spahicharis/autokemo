@@ -54,10 +54,6 @@ import { RouterLink } from '@angular/router';
           <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
               &copy; <a class="border-bottom" routerLink="/">autokemo.ba</a> - sva prava zadržana.
-
-              <br>
-              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-              Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>. Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon.</a> Modified by Haris.
             </div>
             <div class="col-md-6 text-center text-md-end">
               <div class="footer-menu">

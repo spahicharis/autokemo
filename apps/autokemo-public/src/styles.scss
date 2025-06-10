@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "theme/bootstrap";
 //@import "theme/bootstrap.min.css";
 @import "theme/style.css";
@@ -6,7 +7,7 @@
 @import "swiper/modules/parallax";
 
 
-@import "primeng/resources/themes/bootstrap4-light-blue/theme.css";
+@import "theme/bootstrap-primeng/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeflex/primeflex.css";
 
@@ -26,4 +27,18 @@
   border-radius: 50%;
   background: white;
   margin-right: 20px;
+}
+
+.p-submenu-list {
+  padding-left: 0;
+}
+
+.p-submenu-icon,
+.p-menuitem-icon,
+.p-menuitem-text {
+  color: whitesmoke;
+}
+
+.p-submenu-list {
+  background-color: #3a59ac ;
 }

@@ -7,13 +7,14 @@ import Swiper from 'swiper';
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';
 import { CarouselModule } from 'primeng/carousel';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 // register Swiper custom elements
 register();
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [CommonModule, CC, CarouselModule],
+  imports: [CommonModule, CC, CarouselModule, ProgressSpinnerModule],
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.scss'
 })
@@ -21,16 +22,40 @@ export class CarouselComponent implements OnInit {
 
   products = [
     {
+      title: 'Uskoro - Samouslužna autopraonica',
+      subtitle: 'Brzo i efikasno pranje vašeg vozila. Samouslužna autopraonica sa svim potrebnim sadržajima.',
+      image: 'lucas-clarysse-XUo09J8yuN0-unsplash.jpg',
+      style: 2
+    },
+    {
       title: 'Prodaja novih i polovnih dijelova',
       subtitle: 'Kvalitetni polovni dijelovi za sve marke vozila. Brzo i pouzdano rješenje za vaš automobil.',
-      image: 'carousel-bg-1.jpg',
+      image: 'automotive_parts-min-scaled.jpg',
       style: 1
     },
     {
       title: 'Uvoz i prodaja vozila',
       subtitle: 'Posjetite nas i pronađite automobil po vašoj mjeri.',
-      image: 'carousel-bg-2.jpg',
+      image: 'mohit-suthar-MTGgloByPzY-unsplash.jpg',
       style: 2
+    },
+    {
+      title: 'Ugradnja i popravak auto stakala',
+      subtitle: 'Kvalitetna ugradnja i popravak auto stakala za sve marke vozila. Brzo i pouzdano rješenje za vaš automobil.',
+      image: 'liberty-advantage-scaled.jpg',
+      style: 1
+    },
+    {
+      title: 'Auto servis',
+      subtitle: 'Kompletan servis za vaše vozilo. Kvalitetna usluga i stručni tim.',
+      image: 'mert-enes-gorucu-s17eSVKqtB0-unsplash.jpg',
+      style: 2
+    },
+    {
+      title: 'Rent a car',
+      subtitle: 'Iznajmljivanje vozila po povoljnim cijenama. Fleksibilne opcije najma.',
+      image: 'tax-when-renting-a-car.jpg',
+      style: 1
     }
   ];
   responsiveOptions = [
