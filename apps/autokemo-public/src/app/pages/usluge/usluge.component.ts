@@ -1,20 +1,15 @@
 import { Component } from '@angular/core';
+import { PageHeaderSectionComponent } from '../../components/page-header-section/page-header-section.component';
 
 @Component({
   selector: 'app-usluge',
   standalone: true,
-  imports: [],
+  imports: [
+    PageHeaderSectionComponent
+  ],
   template: `
-    <section class="py-5  bg-primary">
-      <div class="container ">
-        <div class="row justify-content-center text-left">
-          <div class="col-12">
-            <span class="text-muted">Početna > Usluge</span>
-            <h2 class="mb-3 display-5 fw-bold">Usluge</h2>
-          </div>
-        </div>
-      </div>
-    </section>
+    <app-page-header-section title="Usluge" subtitle="Početna > Usluge" />
+
     <section class="py-5">
       <div class="container">
         <div class="row justify-content-center">

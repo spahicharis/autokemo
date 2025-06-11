@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
+import { PageHeaderSectionComponent } from '../../../../components/page-header-section/page-header-section.component';
 
 @Component({
   selector: 'app-slep-sluzba',
   standalone: true,
-  imports: [],
+  imports: [
+    PageHeaderSectionComponent
+  ],
   template: `
-    <p>
-      slep-sluzba works!
-    </p>
+    <app-page-header-section title="Šlep služba" subtitle="Partneri > Bihamk" />
   `,
   styles: ``
 })

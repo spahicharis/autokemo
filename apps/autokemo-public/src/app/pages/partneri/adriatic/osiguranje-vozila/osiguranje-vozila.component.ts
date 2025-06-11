@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
+import { PageHeaderSectionComponent } from '../../../../components/page-header-section/page-header-section.component';
 
 @Component({
   selector: 'app-osiguranje-vozila',
   standalone: true,
-  imports: [],
+  imports: [
+    PageHeaderSectionComponent
+  ],
   template: `
-    <p>
-      osiguranje-vozila works!
-    </p>
+    <app-page-header-section title="Osiguranje vozila" subtitle="Partneri > Adriatic Osiguranje" />
   `,
   styles: ``
 })

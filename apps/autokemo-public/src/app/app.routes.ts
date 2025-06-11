@@ -37,8 +37,20 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./pages/partneri/partneri.component').then(m => m.PartneriComponent)
       },
       {
+        path: 'partneri/adriatic-osiguranje',
+        loadComponent: () => import('./pages/partneri/adriatic/adriatic.component').then(m => m.AdriaticComponent)
+      },
+      {
+        path: 'partneri/bihamk',
+        loadComponent: () => import('./pages/partneri/bihamk/bihamk.component').then(m => m.BihamkComponent)
+      },
+      {
         path: 'kontakt',
         loadComponent: () => import('./pages/kontakt/kontakt.component').then(m => m.KontaktComponent)
+      },
+      {
+        path: 'novosti',
+        loadComponent: () => import('./pages/novosti/novosti.component').then(m => m.NovostiComponent)
       },
 
       {

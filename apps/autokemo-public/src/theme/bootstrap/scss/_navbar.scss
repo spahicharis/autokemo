@@ -82,6 +82,14 @@
   .nav-link {
     padding-right: 0;
     padding-left: 0;
+
+    &.active {
+      font-weight: bold;
+
+      i {
+        font-weight: bold;
+      }
+    }
   }
 
   .dropdown-menu {

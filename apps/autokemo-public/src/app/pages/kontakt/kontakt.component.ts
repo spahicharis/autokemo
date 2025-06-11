@@ -1,22 +1,16 @@
 import { Component } from '@angular/core';
+import { PageHeaderSectionComponent } from '../../components/page-header-section/page-header-section.component';
 
 @Component({
   selector: 'app-kontakt',
   standalone: true,
-  imports: [],
+  imports: [
+    PageHeaderSectionComponent
+  ],
   template: `
-    <section class="py-5  bg-primary">
-      <div class="container ">
-        <div class="row justify-content-center text-left">
-          <div class="col-12">
-            <span class="text-muted">Početna > Kontakt</span>
-            <h2 class="mb-3 display-5 fw-bold">Naš kontakt</h2>
-          </div>
-        </div>
-      </div>
-    </section>
+    <app-page-header-section title="Naš kontakt" subtitle="Početna > Kontakt" />
 
-    <section class="">
+    <section class="py-5">
       <div class="container-fluid p-lg-0">
         <div class="row g-0 align-items-center">
           <div class="col-lg-6">

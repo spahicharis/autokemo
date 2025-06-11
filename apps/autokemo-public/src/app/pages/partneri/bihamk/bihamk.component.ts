@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
+import { PageHeaderSectionComponent } from '../../../components/page-header-section/page-header-section.component';
 
 @Component({
   selector: 'app-bihamk',
   standalone: true,
-  imports: [],
+  imports: [
+    PageHeaderSectionComponent
+  ],
   template: `
-    <p>
-      bihamk works!
-    </p>
+    <app-page-header-section title="Bihamk" subtitle="Partneri > Bihamk" />
   `,
   styles: ``
 })
